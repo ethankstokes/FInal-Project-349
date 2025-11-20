@@ -1,0 +1,75 @@
+.subtract-fixed {
+	position: fixed;
+	right: 18px;
+	bottom: 18px;
+	width: 64px;
+	height: 64px;
+	z-index: 100;
+	opacity: 0.85;
+	pointer-events: none;
+}
+:root{
+	--bg:#0f1724;
+	--card:#0b1220;
+	--accent:#06b6d4;
+	--muted:#94a3b8;
+	--text:#e6eef6;
+}
+
+html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,-apple-system,'Helvetica Neue',Arial;color-scheme:dark}
+body{
+	background:linear-gradient(180deg,#071029 0%,#071a2a 100%);
+	color:var(--text);
+	display:flex;align-items:center;justify-content:center;
+}
+
+.container{
+	max-width:900px;
+	padding:40px;
+	margin:24px;
+	background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
+	border-radius:12px;
+	box-shadow:0 6px 30px rgba(2,6,23,0.6);
+}
+
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+h1{font-size:28px;margin:0}
+h2{font-size:22px;margin:0}
+
+nav a{color:var(--accent);text-decoration:none;margin-left:14px;font-weight:600}
+
+.muted{color:var(--muted);font-size:13px;margin-top:6px}
+
+.hero{display:flex;flex-direction:column;gap:18px;margin-top:26px}
+.lead{margin:0;max-width:70ch;line-height:1.6;color:#cfe9f1}
+
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:8px;color:inherit;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--accent);color:#07202a;border:none}
+
+footer{margin-top:28px;color:var(--muted);font-size:13px}
+
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:8px;box-shadow:0 6px 20px rgba(2,6,23,0.4);margin-top:18px}
+
+@media(min-width:720px){h1{font-size:34px}}
+
+/* About page layout */
+.about-grid{display:flex;flex-direction:column;gap:16px;align-items:center}
+@media(min-width:720px){.about-grid{flex-direction:row;align-items:flex-start}}
+.profile-img{width:160px;height:160px;border-radius:12px;object-fit:cover;flex:0 0 160px;border:4px solid rgba(255,255,255,0.04)}
+.content{line-height:1.6}
+
+/* Portfolio image/gallery */
+.gallery{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
+@media(min-width:720px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.project-img{width:100%;height:auto;border-radius:8px;display:block;box-shadow:0 6px 20px rgba(2,6,23,0.35)}
+
+
+img {
+    max-width: 100%;
+    border-radius: 6px;
+    display: block;
+    margin: 1rem auto;
+}
+
+

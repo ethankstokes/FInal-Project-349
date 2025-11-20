@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Home — My Site</title>
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<main class="container">
+			<header>
+				<div>
+					<h1>Welcome — Ethan's Site</h1>
+					<div class="muted">A personal homepage</div>
+				</div>
+				<nav>
+					<a href="/index.html">Home</a>
+					<a href="/portfolio.html">Portfolio</a>
+					<a href="/resume.html">Resume</a>
+					<a href="/about.html">About</a>
+				</nav>
+			</header>
+
+			<section class="hero">
+				<p class="lead">Hi — I'm Ethan. Im glad you made it here. Please check out my portfolio, resume, and about section!</p>
+
+				<div class="buttons">
+					<a class="btn primary" href="/portfolio.html">View Portfolio</a>
+					<a class="btn" href="/resume.html">Resume</a>
+					<a class="btn" href="/about.html">About</a>
+				</div>
+
+				<footer>
+					© <span id="year"></span> Ethan - All rights reserved.
+				</footer>
+			</section>
+		</main>
+		<script>
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+		<img src="/images/Subtract.svg" alt="Decorative" class="subtract-fixed" />
+	</body>
+</html>
